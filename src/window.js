@@ -38,9 +38,9 @@ function onDecodedQr(uuid) {
 
 function sendUuid(uuid, callback) {
   var formData = new FormData();
-  formData.uuid = uuid;
+  formData.append('uuid', uuid);
   var xhr = new XMLHttpRequest();
-  xhr.open('POST', 'http://TODO');
+  xhr.open('POST', 'https://qrlogger.appspot.com/endpoint');
   xhr.onloadend = function() {
     if (xhr.status !== 200) {
       // Try again later in 30s.

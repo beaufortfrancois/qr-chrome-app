@@ -12,6 +12,7 @@
   },
   "kiosk_enabled" : true,
   "permissions": [
+    "https://qrlogger.appspot.com/*",
     "power",
     "videoCapture"
   ]
