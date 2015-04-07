@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'GothamBook';
+    src: url('fonts/gothambook-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  color: #f2b335;
+  background: #161616;
+  margin: 0 auto;
+  -webkit-transition: background-color .2s ease-out;
+}
+.log {
+  background: #f5af33;
+}
+#messages {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  position: fixed;
+  width: 100%;
+  max-height: 640px;
+}
+#messages pre {
+  font-family: 'GothamBook';
+  word-wrap: break-word;
+  font-size: 18px;
+  display: block;
+  padding: 25px;
+  letter-spacing: -1px;
+  margin: 4px auto;
+  color: #fff;
+  width: 640px;
+}
+::-webkit-scrollbar {
+  width: 0px;
+}
+#qr {
+  width: 640px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+canvas {
+  -webkit-transform: rotateY(180deg);
+  z-index: 4;
+  border-radius: 4px;
+}
+video {
+  display: none;
+}
